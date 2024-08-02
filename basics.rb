@@ -8,3 +8,5 @@
   puts true.class                      #=> TrueClass
   puts false.class                     #=> FalseClass
   puts (1..100).class                  #=> Range
+# exercices
+
