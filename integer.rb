@@ -75,3 +75,45 @@ puts "Bitwise OR: #{or_value}"     # Output: Bitwise OR: 47
 puts "Bitwise XOR: #{xor_value}"   # Output: Bitwise XOR: 37
 puts "Left shift: #{left_shift}"   # Output: Left shift: 84
 puts "Right shift: #{right_shift}" # Output: Right shift: 21
+#  some more methods
+
+num = 42
+
+# Opérations mathématiques de base
+puts num + 10         # Addition -> Output: 52
+puts num - 10         # Soustraction -> Output: 32
+puts num * 2          # Multiplication -> Output: 84
+puts num / 2          # Division -> Output: 21
+puts num % 5          # Modulo -> Output: 2
+puts num ** 2         # Exponentiation -> Output: 1764
+
+# Conversion
+puts num.to_s         # Convertir en string -> Output: "42"
+puts num.to_f         # Convertir en float -> Output: 42.0
+
+# Parité
+puts num.even?        # Est-ce pair ? -> Output: true
+puts num.odd?         # Est-ce impair ? -> Output: false
+
+# Comparaison
+puts num > 20         # Output: true
+puts num == 42        # Output: true
+puts num.between?(30, 50)  # Output: true
+# Arrondi
+puts (42.7).round         # Arrondir -> Output: 43
+puts (42.3).round         # Output: 42
+
+# Division entière
+puts 42.div(5)            # Division entière -> Output: 8
+
+# Conversion en binaire, octal et hexadécimal
+puts num.to_s(2)          # En binaire -> Output: "101010"
+puts num.to_s(8)          # En octal -> Output: "52"
+puts num.to_s(16)         # En hexadécimal -> Output: "2a"
+
+# Obtenir le successeur et prédécesseur
+puts num.next             # Successeur -> Output: 43
+puts num.pred             # Prédécesseur -> Output: 41
+
+# Racine carrée
+puts Math.sqrt(num)       # Racine carrée -> Output: 6.48074069840786

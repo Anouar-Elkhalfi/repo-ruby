@@ -78,3 +78,12 @@ puts arr.inspect           # Output: ["Hello", "Ruby!"]
 # Retirer les espaces
 trimmed_str = "  Hello  ".strip
 puts trimmed_str           # Output: "Hello"
+
+# saisie user 
+
+puts "Saisissez un texte :"
+input = gets.chomp  # 'chomp' supprime le retour à la ligne à la fin
+puts "Vous avez saisi : #{input}"
+
+#gets : Attend que l'utilisateur entre du texte.
+# chomp : Supprime le caractère de retour à la ligne ajouté automatiquement après la saisie.
