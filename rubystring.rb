@@ -43,3 +43,38 @@ puts "ha" * 3               # Output: hahaha
 # Encoding
 puts str.encoding            # Output: UTF-8
 puts str.encode("ASCII")     # Converts the string to ASCII encoding
+
+#  SOME COMMON METHOS FOR STRING
+
+
+str = "Hello, Ruby!"
+
+# Accéder aux caractères
+puts str[0]           # Output: "H"
+puts str[-1]          # Output: "!"
+
+# Longueur de la chaîne
+puts str.length       # Output: 11
+puts str.size         # Output: 11
+
+# Transformation de chaîne
+puts str.upcase       # Output: "HELLO, RUBY!"
+puts str.downcase     # Output: "hello, ruby!"
+puts str.capitalize   # Output: "Hello, ruby!"
+puts str.reverse      # Output: "!ybuR ,olleH"
+
+# Rechercher
+puts str.include?("Ruby")  # Output: true
+puts str.index("Ruby")     # Output: 7
+
+# Remplacer du texte
+new_str = str.sub("Ruby", "World")
+puts new_str               # Output: "Hello, World!"
+
+# Fractionner une chaîne
+arr = str.split(", ")
+puts arr.inspect           # Output: ["Hello", "Ruby!"]
+
+# Retirer les espaces
+trimmed_str = "  Hello  ".strip
+puts trimmed_str           # Output: "Hello"

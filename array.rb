@@ -102,3 +102,34 @@ puts str  # Output: a, b, c
 arr_of_pairs = [[:key1, "value1"], [:key2, "value2"]]
 hash = arr_of_pairs.to_h
 puts hash.inspect  # Output: {:key1=>"value1", :key2=>"value2"}
+
+
+# Voici toutes les méthodes couramment utilisées sur les arrays en Ruby
+arr = [1, 2, 3, 4, 5]
+
+# Itération
+arr.each { |num| puts num }
+
+# Transformation
+new_arr = arr.map { |num| num * 2 }
+puts new_arr.inspect
+
+# Filtrage
+evens = arr.select { |num| num.even? }
+puts evens.inspect
+
+# Ajout d'éléments
+arr.push(6)
+arr << 7
+puts arr.inspect
+
+# Retrait d'éléments
+arr.pop
+puts arr.inspect
+
+# Vérification d'inclusion
+puts arr.include?(3)
+
+# Tri
+sorted_arr = arr.sort
+puts sorted_arr.inspect
