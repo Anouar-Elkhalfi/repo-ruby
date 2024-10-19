@@ -14,10 +14,10 @@ arr.insert(3, 2.5)
 puts arr.inspect     # Output: [0, 1, 2, 2.5, 3, 4, 5, 6, 7]
 
 # Removing elements
-arr.pop
-arr.shift
-arr.delete_at(3)
-arr.delete(4)
+arr.pop              # Removes 7
+arr.shift            # Removes 0
+arr.delete_at(3)     # Removes 3rd index element (2.5)
+arr.delete(4)        # Removes element 4
 puts arr.inspect     # Output: [1, 2, 2.5, 5, 6]
 
 # Iterating
@@ -102,6 +102,7 @@ puts str  # Output: a, b, c
 arr_of_pairs = [[:key1, "value1"], [:key2, "value2"]]
 hash = arr_of_pairs.to_h
 puts hash.inspect  # Output: {:key1=>"value1", :key2=>"value2"}
+
 
 
 # Voici toutes les méthodes couramment utilisées sur les arrays en Ruby
